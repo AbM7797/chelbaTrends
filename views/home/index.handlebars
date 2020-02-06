@@ -1,0 +1,124 @@
+
+
+<!--twitter-->
+<div id="twitter">
+    <center>
+    <img src="/nahra.png" alt="..." class="t">
+<div class="r">
+    <h2>Top hashtag on Twitter</h2>
+</center>
+    <br>
+<div class="row container-fluid padding" id="bd" >
+
+         {{#each trenTweets}}
+  <div class="col-sm col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Tweet Volume: {{tweet_volume}}</h6>
+        <a href={{url}} class="card-link">link</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  {{/each}}
+
+</div>
+</div>
+<br>
+
+
+<!--youtube-->
+<div id="youtube">
+    
+    <center>
+    <img src="you.png" alt="..." class="t">
+<div class="r">
+    <h2>Top Videos on Youtube in Tunisia</h2>
+</center>
+    <br>
+<div class="container-fluid padding row " id="bd" >
+    
+   
+        {{#each youtube}}
+  <div class="col-sm  col-lg-6 col-md">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{snippet.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Views: {{statistics.viewCount}}</h6>
+  <iframe width="420" height="315"
+src="https://www.youtube.com/embed/{{id}}">
+</iframe>
+       
+      </div>
+    </div>
+  </div>
+  {{/each}} 
+
+
+</div>
+</div>
+<br><br>
+<!--GOOGLE-->
+<div id="GOOGLE">
+    
+    <center>
+        <img src="gg.png" alt="..." class="t">
+        <div class="r"> 
+            <h2>Tendances de recherches au quotidien d'aujourd'hui </h2>
+        </div>
+    </center>
+    <br>
+    <div class="container-fluid  padding row " id="bd" style="max-width: 100vw;" >    
+        
+       
+            {{#each googleQuo}}
+            <div class="col-lg-3 col-md-6 mb-4">
+               
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{title.query}}</h5>
+                         <h6 class="card-subtitle mb-2 text-muted">Recherches: {{formattedTraffic}}</h6>
+                         <a href={{image.newsUrl}} class="card-link">link</a>
+                    </div>
+              </div>
+            </div>
+          
+            {{/each}}
+
+        
+    </div>
+    <br>
+</div>
+
+<center>
+    <div class="r"> 
+        <h2>Tendances de recherches en temps reel</h2>
+    </div>
+</center>
+  <br>
+<div class="container" >
+    <div class="row" id="bd">
+        
+    {{#each googleTemp}}
+  
+  <div class="col-sm col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-body">
+        
+        <h5 class="card-title">{{title}}</h5>
+        <a href={{image.newsUrl}} class="card-link">link</a>
+    
+      </div>
+    </div>
+  </div>
+ 
+  {{/each}}
+ 
+</div>
+<br>
+
+
+</div>
+</div>
+

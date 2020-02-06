@@ -1,0 +1,71 @@
+
+      #tw:hover {
+          text-decoration: underline;
+          color: #00acee;
+      }
+     
+      #go:hover{
+          text-decoration: underline;
+          color: #db4a39;
+      }
+      #yt:hover{
+          text-decoration: underline;
+          color: red;
+      }
+      .wrap{
+          height: 100vh;
+          background-image: url("./amna.jpg.png.jpg" );
+        background-repeat: no-repeat; 
+         background-size: cover;
+         background-position:cover;
+      }
+     h1 {
+         color:white;
+         margin-bottom: 30px;
+         font-size: 64px;
+         font-weight: 700;;
+         
+     }
+     #hmm { width:70%;
+        border: solid;
+        border-radius: 25px;
+        border-width: 4px;
+        border-color: teal;
+        background-color: teal !important;
+        color: seashell;
+
+    }
+    #hmm:hover { width:70%;
+        border: solid;
+        border-radius: 25px;
+        border-width: 4px;
+        border-color: teal;
+        background-color: seashell !important;
+        color: teal;
+
+    }
+     
+     #bd{
+         border: 1px solide bleu ;
+     }
+     .t { width: 10%;
+    }
+    .r {
+        border-style: solid;
+    }
+   .wrap nav{
+       position: fixed;
+       width: 100vw;
+       z-index: 100;   
+   }
+   nav{
+       color: red;
+   }
+   .navbar {
+    padding: .8rem;
+  }
+  .navbar-nav li {
+    padding-right: 20px;
+  }
+ 
+}
