@@ -3,7 +3,7 @@ const app=express();
 const bodyParser=require('body-parser');
 const exphbs=require('express-handlebars');
 const path=require('path');
-
+const port = process.env.PORT || 5000;
 
 
 app.use(express.static(path.join(__dirname,'public')));
@@ -23,7 +23,7 @@ const home=require('./routes/home/index');
 app.use('/',home);
 
 
-app.listen(7777,()=>{
+app.listen(port,()=>{
     console.log('listening');
 });
 module.exports=app;
