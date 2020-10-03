@@ -54,7 +54,7 @@ router.get('/',(req,res)=>{
            
         }
         //***************************************Youtube************************
-        axios.get('https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=TN&key=AIzaSyBYDE4k-mi-fqc-Ug05HENZlnP_468Yqxk').then(resul=>{
+        axios.get('https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=TN&key=AIzaSyCT7G8i2gGZLSmSWi3iw6dS6jQxQxEwpUc').then(resul=>{
         var yout = resul.data.items;
         yout.sort(function(a,b){
             return a.statistics.viewCount - b.statistics.viewCount;
@@ -90,6 +90,8 @@ router.get('/',(req,res)=>{
 
   
         
+}).catch(error=>{
+    console.log(error);
 });
 
  

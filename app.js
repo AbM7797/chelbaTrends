@@ -24,6 +24,6 @@ app.use('/',home);
 
 
 app.listen(port,()=>{
-    console.log('listening');
+    console.log('listening on port:' + port);
 });
 module.exports=app;
